@@ -17,6 +17,33 @@
     margin: 20px auto;
 }
 
+h2 {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1 {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+p {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 .container-flex {
     display: flex;
@@ -33,6 +60,13 @@
     margin-right: 30px;
 }
 
+.light-violet {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .container-flex>li>a {
     text-decoration: none;
     color: #3C354F;
@@ -47,10 +81,42 @@
     padding: 15px 20px;
 }
 
+.btn-primary {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 0;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+
+}
+
+.btn-secondary {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 0;
+    border-radius: 48px;
+    background: #4EC5F7;
+
+}
+
 .header-btn i {
     margin-left: 10px;
 }
 
 .fa-youtube {
     color: red;
+}
+
+.header-banner>p {
+    margin: 10px 0px;
 }
