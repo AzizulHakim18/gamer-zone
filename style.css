@@ -185,6 +185,37 @@ p {
     text-align: center;
 }
 
+.play-instant {
+    position: relative;
+    bottom: -200px;
+    left: 150px;
+}
+
+.play-instant-title {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    padding: 0px 20px;
+    left: -30px;
+    top: -100px;
+}
+
+.hores-img {
+    width: 400px;
+}
+
+.hores-doll {
+    width: 30%;
+    position: relative;
+    right: 450px;
+    bottom: -50px;
+}
+
+
+
+
+
+
 
 
 /* for mobile devices */
@@ -228,6 +259,29 @@ p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
+    }
+
+    .play-instant {
+        position: relative;
+        top: 1%;
+        left: 0;
+    }
+
+    .play-instant-title {
+        position: static;
+        width: 90%;
+
+    }
+
+    .hores-img {
+        width: 300px;
+    }
+
+    .hores-doll {
+        width: 200px;
+        position: relative;
+        left: 150px;
+        bottom: 100px;
     }
 }
 
