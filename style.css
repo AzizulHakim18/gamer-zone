@@ -124,15 +124,66 @@ p {
     text-align: end;
 }
 
+/* funny videos section */
 
+.funny-videos-title {
+    text-align: center;
+}
 
+.funny-videos-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    width: 90%;
+    margin: auto;
+}
 
+.box {
+    height: 300px;
+    width: 250px;
+    position: relative;
+}
 
+.box img {
+    width: 100%;
+}
 
+.box-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.box-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98%;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
 
+}
 
+.box:hover .box-overlay {
+    opacity: 1;
+}
 
+.box-text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 
 
@@ -172,6 +223,12 @@ p {
     .extra-ordinary-img {
         width: 90%;
     }
+
+    .funny-videos-boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
 }
 
 /* for tablet devices */
@@ -185,6 +242,7 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
     }
 
     .container-flex-reverse {
@@ -224,4 +282,11 @@ p {
     .extra-ordinary {
         text-align: center;
     }
+
+    .funny-videos-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
 }
