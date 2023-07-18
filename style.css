@@ -19,30 +19,22 @@
 
 h2 {
     text-align: center;
-    font-family: Work Sans;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 h1 {
     text-align: center;
-    font-family: Work Sans;
     font-size: 95px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
     text-transform: uppercase;
 }
 
 p {
     color: #534C64;
-    font-family: Work Sans;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    margin: 25px 0px;
 }
 
 .container-flex {
@@ -127,6 +119,10 @@ p {
     margin: 10px 0px;
 }
 
+/* extra ordinary section */
+.extra-ordinary {
+    text-align: end;
+}
 
 
 
@@ -140,10 +136,13 @@ p {
 
 
 
-
-
-
+/* for mobile devices */
 @media screen and (max-width:576px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
     .container-flex {
         display: flex;
         flex-direction: column;
@@ -164,5 +163,65 @@ p {
 
     .banner-img {
         width: 80%;
+    }
+
+    .extra-ordinary {
+        text-align: center;
+    }
+
+    .extra-ordinary-img {
+        width: 90%;
+    }
+}
+
+/* for tablet devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .container-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-flex-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .btn-primary {
+        padding: 15px 20px;
+    }
+
+    .btn-secondary {
+        padding: 15px 20px;
+    }
+
+    .banner-img {
+        width: 90%;
+    }
+
+    h2 {
+
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .extra-ordinary-img {
+        width: 90%;
+    }
+
+    .extra-ordinary {
+        text-align: center;
     }
 }
