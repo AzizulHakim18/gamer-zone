@@ -51,6 +51,12 @@ p {
     align-items: center;
 }
 
+.container-flex-reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container-flex img {
     margin-right: 5px;
 }
@@ -119,4 +125,44 @@ p {
 
 .header-banner>p {
     margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-flex-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .btn-primary {
+        padding: 11px 20px;
+    }
+
+    .btn-secondary {
+        padding: 11px 20px;
+    }
+
+    .banner-img {
+        width: 80%;
+    }
 }
