@@ -136,6 +136,7 @@ p {
     gap: 5px;
     width: 90%;
     margin: auto;
+    position: relative;
 }
 
 .box {
@@ -187,29 +188,54 @@ p {
 
 .play-instant {
     position: relative;
-    bottom: -200px;
-    left: 150px;
+    /* bottom: -200px;
+    left: -200px; */
 }
 
 .play-instant-title {
-    position: relative;
+    position: absolute;
     width: 50%;
     margin: auto;
     padding: 0px 20px;
-    left: -30px;
-    top: -100px;
+    left: 10%;
+    bottom: -400px;
+    /* top: 50%; */
 }
 
 .hores-img {
     width: 400px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
 }
 
 .hores-doll {
-    width: 30%;
-    position: relative;
-    right: 450px;
-    bottom: -50px;
+    width: 200px;
+    position: absolute;
+    right: 25%;
+    top: 350px;
 }
+
+/* tab box */
+.tab-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    position: static;
+    top: 500px;
+    left: 0;
+}
+
+.tab-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+
+
 
 
 
@@ -268,20 +294,21 @@ p {
     }
 
     .play-instant-title {
-        position: static;
-        width: 90%;
-
+        width: 80%;
+        position: absolute;
+        top: 100px;
     }
+
 
     .hores-img {
         width: 300px;
+        top: 450px;
     }
 
     .hores-doll {
-        width: 200px;
-        position: relative;
-        left: 150px;
-        bottom: 100px;
+        width: 150px;
+        left: -1px;
+        top: 620px;
     }
 }
 
@@ -343,4 +370,17 @@ p {
         gap: 5px;
     }
 
+    .play-instant-title {
+        left: -2%;
+
+    }
+
+    .hores-img {
+        width: 300px;
+    }
+
+    .hores-doll {
+        width: 160px;
+        top: 250px;
+    }
 }
