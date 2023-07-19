@@ -229,6 +229,7 @@ p {
 .tab-container-position {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    place-items: center;
     gap: 10px;
     position: absolute;
     top: 650px;
@@ -240,6 +241,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    border: 1px solid white;
     border-radius: 30px;
     padding: 5px;
 }
@@ -250,6 +252,7 @@ p {
     color: #FF42A5;
 }
 
+/* footer section */
 footer {
     position: relative;
     color: white;
@@ -368,7 +371,7 @@ footer {
     }
 
     .tab-container-position {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         top: 800px;
     }
 
@@ -455,7 +458,7 @@ footer {
     }
 
     .tab-container-position {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .footer-section {
