@@ -227,10 +227,15 @@ p {
 }
 
 .tab-container-position {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
-    gap: 10px;
+    gap: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 15px;
     position: absolute;
     top: 650px;
 
@@ -240,10 +245,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     border: 1px solid white;
-    border-radius: 30px;
-    padding: 5px;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+
+.tab-box-game-name {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .tab-box:hover {
@@ -356,23 +367,36 @@ footer {
         width: 80%;
         position: absolute;
         top: 100px;
+        left: 0;
     }
 
 
     .hores-img {
         width: 300px;
-        top: 450px;
+        top: 650px;
     }
 
     .hores-doll {
         width: 150px;
         left: -1px;
-        top: 620px;
+        top: 820px;
     }
 
     .tab-container-position {
-        grid-template-columns: repeat(3, 1fr);
-        top: 800px;
+        top: 1040px;
+    }
+
+    .tab-box {
+        padding: 0px 0px;
+    }
+
+    .tab-box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tab-box-game-name {
+        font-size: 10px;
     }
 
     .footer-section {
@@ -381,7 +405,8 @@ footer {
     }
 
     .footer-link {
-        flex-direction: column;
+        flex-flow: row wrap;
+        gap: 10px;
     }
 }
 
@@ -457,11 +482,17 @@ footer {
         top: 250px;
     }
 
-    .tab-container-position {
-        grid-template-columns: repeat(4, 1fr);
+    .tab-box {
+        padding: 0px 0px;
     }
+
 
     .footer-section {
         bottom: -1300px;
+    }
+
+    .footer-link {
+        flex-flow: row wrap;
+        gap: 10px;
     }
 }
